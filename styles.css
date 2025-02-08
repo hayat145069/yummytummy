@@ -1,0 +1,187 @@
+/* Resetting margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Navigation Bar */
+header {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header:hover{
+	background: rgba(0, 0, 0, 1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff; /* Default text color */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: inline-block; /* Ensures the padding is clickable */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+  background: #ccc; /* Background color on hover */
+  color: #000; /* Text color on hover */
+  border-radius: 5px; /* Optional: Rounded corners for the highlight */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('images/logo2.png'); /* Replace with your image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff5f4;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text .btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background: #ff9800;
+}
+
+/* Section Content Styling */
+.section-content {
+  text-align: center;
+  padding: 80px 20px;
+  color: #000;
+  background-image: url('images/logo2.png'); /* Replace with your image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff5f4;
+  background-position: center;
+  
+}
+
+/* Menu Items */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.menu-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.price {
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tab {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #e74c3c; /* Red for active tab */
+}
+
+/*.tab:hover {
+  background-color: #555;} /* Gray on hover */ 
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
