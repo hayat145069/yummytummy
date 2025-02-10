@@ -29,8 +29,11 @@ header:hover{
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: left;
+  justify-content: center; /* Center the menu items horizontally */
+  align-items: center; /* Center the items vertically */
   padding: 10px 0;
+  margin: 0;
+  flex-wrap: wrap; /* Ensure items don't overflow the screen */
 }
 
 nav ul li {
@@ -55,13 +58,13 @@ nav ul li a:hover {
 /* Responsive Styling for Mobile Screens */
 @media (max-width: 600px) {
   nav ul {
-    flex-direction: column; /* Stack the menu items */
-    justify-content: center; /* Center the items */
-    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center items on smaller screens */
+    flex-direction: row; /* Keep the layout horizontal */
+    flex-wrap: wrap; /* Allow wrapping if needed */
   }
 
   nav ul li {
-    margin: 5px 0; /* Reduce margin between items */
+   margin: 0 8px;
   }
 
   nav ul li a {
