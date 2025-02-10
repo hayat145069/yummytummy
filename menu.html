@@ -26,41 +26,73 @@
 
   <!-- Tab Navigation -->
   <div class="menu-tabs">
-    <button class="tab-button active" onclick="openTab('Pastries')">Pastries</button>
-    <button class="tab-button" onclick="openTab('Salads')">Salads</button>
-    <button class="tab-button" onclick="openTab('Side Dishes')">Side Dishes</button>
-    <button class="tab-button" onclick="openTab('Appetizers')">Appetizers</button>
+    <button class="tab active" onclick="openTab('Pastries')">Pastries</button>
+    <button class="tab" onclick="openTab('Salads')">Salads</button>
+    <button class="tab" onclick="openTab('Side Dishes')">Side Dishes</button>
+    <button class="tab" onclick="openTab('Appetizers')">Appetizers</button>
   </div>
 
   <!-- Tab Contents -->
   <div id="Pastries" class="tab-content active">
     <div class="menu-item">
       <h2>Spinach, Potato, Pizza</h2>
-      <span class="price">$0.35</span>
+      <span class="price">0.35</span>
     </div>
     <div class="menu-item">
       <h2>White & Yellow Cheese</h2>
-      <span class="price">$0.35</span>
+      <span class="price">0.35</span>
     </div>
     <div class="menu-item">
       <h2>Green Thyme Balls (with Kiri Cheese Filling)</h2>
-      <span class="price">$0.50</span>
+      <span class="price">0.50</span>
     </div>
     <div class="menu-item">
       <h2>Green Thyme Balls (Plain)</h2>
-      <span class="price">$0.25</span>
+      <span class="price">0.25</span>
     </div>
   </div>
 
   <div id="Salads" class="tab-content">
     <div class="menu-item">
       <h2>Tabbouleh</h2>
-      <span class="price">M $14.00 / L $25.00</span>
+      <span class="price">M 14.00 / L 25.00</span>
     </div>
     <div class="menu-item">
       <h2>Pasta Salad</h2>
       <span class="price">M $12.00 / L $20.00</span>
     </div>
+	<div class="menu-item">
+      <h2>Arugula  Salad</h2>
+      <span class="price">M 10.00 / L 14.00</span>
+    </div>
+	<div class="menu-item">
+        <h2>Arugula Salad with Fruits  (Strawberry & Pineapple) </h2>
+        <span class="price">M  12.00 / L  20.00</span>
+      </div>
+	  <div class="menu-item">
+        <h2>Lettuce & Potato Salad </h2>
+        <span class="price">M  12.00 / L  18.00</span>
+      </div>
+	  <div class="menu-item">
+        <h2>Zingar Salad</h2>
+        <span class="price">M  15.00 / L  21.00</span>
+      </div>
+	  <div class="menu-item">
+        <h2>Russian Salad</h2>
+        <span class="price">M  12.00 / L  18.00</span>
+      </div>
+	  <div class="menu-item">
+        <h2>Fattoush</h2>
+        <span class="price">M  10.00 / L  16.00</span>
+      </div>
+	  <div class="menu-item">
+        <h2>Pomelo Salad</h2>
+        <span class="price">M  12.00 / L  20.00</span>
+      </div>
+	  <div class="menu-item">
+        <h2>Caesar Salad</h2>
+        <span class="price">M  10.00 / L  15.00</span>
+      </div>
     <!-- Add more items here -->
   </div>
 
@@ -99,7 +131,7 @@ function openTab(tabName) {
   contents.forEach((content) => content.classList.remove('active'));
 
   // Remove active state from all buttons
-  const buttons = document.querySelectorAll('.tab-button');
+  const buttons = document.querySelectorAll('.tab');
   buttons.forEach((button) => button.classList.remove('active'));
 
   // Show the selected tab and mark the button as active
